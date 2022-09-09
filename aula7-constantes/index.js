@@ -7,4 +7,4 @@ console.log(resultado);
 console.log(resultadoDuplicado);
 
 
-// CONSTANTES NÃO PODEM SER ALTERADAS
+//  O VALOR DE UMA CONSTANTE NÃO PODE SER ALTERADA AO LONGO DO CODIGO
