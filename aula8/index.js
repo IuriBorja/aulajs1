@@ -22,5 +22,9 @@ anoNascimento = anoAtual - idade;
 //console.log(anoNascimento);
 //console.log(imc);
 
-console.log(primeiroNome + ' ' + segundoNome + ' tem ' + idade + ' anos, ' + 'pesa ' + peso + ' kg tem ' + altura + ' de altura e seu IMC é de ' + imc + '.');
-console.log(primeiroNome + ' ' + 'nasceu em ' + anoNascimento + '.');
+/*console.log(primeiroNome + ' ' + segundoNome + ' tem ' + idade + ' anos, ' + 'pesa ' + peso + ' kg tem ' + altura + ' de altura e seu IMC é de ' + imc + '.');*/
+
+
+
+console.log(`${primeiroNome} ${segundoNome} tem ${idade} anos, pesa ${peso}kg tem ${altura} de altura e seu IMC é de ${imc}.`); // isso se chama TEMPLATE STRINGS
+console.log(`${primeiroNome} nasceu em ${anoNascimento}.`);
