@@ -30,3 +30,19 @@ const idade = anoAtual - anoNascimento;
 
 
 alert('UAU, voce tem ' + idade + ' !! ' + 'Tá ficando velho kakaka.');
+
+
+
+
+// DE MANEIRA SIMPLIFICADA
+// NESSE EXEMPLO USA-SE O SINAL DE + NA FRENTE DO PROMPT
+// PARA TRANSFORMAR EM NUMERO
+
+// E USANDO O TEMPLATE STRING PARA JÁ FAZER O CALCULO SEM PRECISAR
+// CRIAR UMA VARIAVEL PARA ISSO
+
+let num3 = +prompt('manda um numero ai');
+let num4 = +prompt('manda outro');
+
+
+alert(`ta ai a soma! ${num3 + num4}`);
