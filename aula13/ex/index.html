@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício aula 13</title>
+</head>
+<body>
+     
+
+    <!-- 
+        A propriedade .length diz a quantidade de caracteres da string
+
+        Ao usar [] junto com a variavel, ao por um valor dentro, ela diz o caractere especifico
+        como no exemplo ${nome[1]}
+
+        O método .indexOf('') mostra o primeiro índice de uma string especificado na funçáo ('')
+        O método .lastIndexOf('') mostra o último índice de uma string especificado na funçáo ('')
+
+        O método .slice diz uma parte específica da string de acordo com a informação colocada
+        dentro da função()
+
+        O método .split separa as palavras contidas na string, deve-se usar uma informação 
+        que separe as palavras, exemplo: se estão separadas por espaço, usa espaço, se estiver
+        separado por virgulas, se poe virgula, exemplo:
+
+        variavel.split(" ") <por espaço 
+        variavel.split(",") <por virgula 
+
+
+        O método .toUpperCase deixa toda a string com letras maiusculas
+        O método .toLowerCase deixa toda a string com letras minusculas
+
+
+    -->
+
+    <script>
+        const nome = prompt('Digite seu nome completo: ');
+        document.body.innerHTML += `Seu nome é: <strong>${nome}</strong> <br />`;
+        document.body.innerHTML += `Seu nome tem: <strong>${nome.length}</strong> letras <br />`;
+        document.body.innerHTML += `A segunda letra do seu nome é: <strong>${nome[1]}</strong> <br />`;
+        document.body.innerHTML += `Qual o primeiro índice da letra I no seu nome? <strong>${nome.indexOf('I')}</strong><br />`;
+        document.body.innerHTML += `Qual o último índice da letra r no seu nome? <strong>${nome.lastIndexOf('r')}</strong><br />`;
+        document.body.innerHTML += `As últimas 3 letras do seu nome são: <strong>${nome.slice(15)}</strong><br />`;
+        document.body.innerHTML += `As palavras do seu nome são: <strong>${nome.split(" ")}</strong><br />`;
+        document.body.innerHTML += `Seu nome com letras maiúsculas: <strong>${nome.toUpperCase()}</strong><br />`;
+        document.body.innerHTML += `Seu nome com letras minúsculas: <strong>${nome.toLowerCase()}</strong><br />`;
+    </script>
+</body>
+</html>
