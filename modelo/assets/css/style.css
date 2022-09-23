@@ -66,3 +66,11 @@ form button :hover {
     background: var(--primary-color-darker);
 }
 
+
+.tabela {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   border: solid var(--primary-color);
+   margin: 40px;
+}
