@@ -94,3 +94,23 @@ for (var i = 21; i < targetDisk.length; i++) {
 
 var i = newDisk.join('');
 console.log(i);
+
+
+
+
+//exe 51
+
+
+
+var isEven = function (number) {
+    return number % 2 === 0;
+};
+
+
+var result = isEven(10);
+
+if (result === 0) {
+    console.log('true');
+} else {
+    console.log('false');
+}
