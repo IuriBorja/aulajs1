@@ -25,5 +25,5 @@ const pessoa = {
 };
 
 //Atribuição via desestruturação
-const {nome, sobrenome, idade} = pessoa;
-console.log(nome, sobrenome);
+const {nome, endereco, ...resto} = pessoa;
+console.log(resto);
