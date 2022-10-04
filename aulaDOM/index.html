@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando o DOM</title>
+    <style>
+        body {
+            background: rgb(34, 158, 192);
+            color: bisque;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScrip</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        const teste = document.querySelector('#msg');
+        teste.style.background = 'black';
+        teste.style.color = 'yellow';
+
+        const novaMsg = document.querySelector('h1');
+        window.document.write('agora vai ' + novaMsg.innerText);
+        novaMsg.style.background = 'purple';
+
+        const p1 = document.getElementsByTagName('p')[0]
+        p1.style.color = 'orange';
+
+        const corpo = window.document.body
+        corpo.style.background = 'rgb(10, 20, 50)';
+
+        //window.alert(p1.innerHTML);
+
+    </script>
+
+</body>
+</html>
