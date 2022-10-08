@@ -40,3 +40,27 @@ const fizzBuzz = (num) => {
         (num % 5 == 0) ? `Buzz` : num;
 };
 
+
+
+//OUTRA MANEIRA 
+
+
+const fizzBuzz1 = (num) => {
+    // Verification
+    num = Number(num);
+    if(!num) return 'This parameter must be a number!';
+ 
+    let three = num % 3 === 0;
+    let five = num % 5 === 0;
+ 
+    // Conditionals
+    if (three && five) return 'FizzBuzz';
+    if (three) return 'Fizz';
+    if (five) return 'Buzz';
+    if (!three && !five) return num;
+ 
+}
+ 
+for (let i = 0; i <= 100; i++)  {
+    console.log(`${i} = ${fizzBuzz1(i)}`);
+}
