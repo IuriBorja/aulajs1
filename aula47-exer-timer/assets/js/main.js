@@ -1,40 +1,56 @@
+
+
+//FUNÇÃO PARA PRESERVAR TODAS AS VARIÁVEIS DE SEREM GLOBAIS
+
+function relogio () {
+//FUNÇÃO PARA CRIAR OS SEGUNDOS
+function criaHoraDosSegundos (segundos) {
+    const data = new Date(segundos * 1000);
+    return data.toLocaleTimeString ('pt-BR', {
+        hour12: false,
+        timeZone: 'UTC'
+    });
+}
+
+//AQUI AS VARIÁVEIS PARA CAPTURAR AS CLASSES DOS BOTÕES
 const relogio = document.querySelector('.relogio');
 const iniciar = document.querySelector('.iniciar');
 const pausar = document.querySelector('.pausar');
 const zerar = document.querySelector('.zerar');
 
-
-iniciar.addEventListener('click', function(event) {
-    relogio.innerHTML = mostraHora();
-});
-
-pausar.addEventListener('click', function(event) {
-    alert('cliquei no pausar');
-});
-
-zerar.addEventListener('click', function (event) {
-    relogio.innerHTML;
-});
+//AQUI VARIÁVEIS PARA CONTROLAR OS SEGUNDOS
+let segundos = 0;
+let timer;
 
 
-function mostraHora () {
-    let data = new Date();
-
-
-    return data.toLocaleTimeString('pt-BR', {
-        hour12: false
-    });
-
+function iniciaRelogio () {
+    timer = setInterval(function() {
+        segundos++;
+        relogio.innerHTML = criaHoraDosSegundos(segundos);
+    }, 1000);
 }
 
 
+//AQUI ESTÃO AS AÇÕES PARA OS BOTÕES
 
-
-/*const timer = setInterval(function() {
-    console.log(mostraHora());
-}, 1000);
-
-setTimeout(function() {
+iniciar.addEventListener('click', function(event) {
+    relogio.classList.remove ('pausado');
     clearInterval(timer);
-}, 86400);
-*/
+    iniciaRelogio();
+});
+
+pausar.addEventListener('click', function(event) {
+    relogio.classList.add ('pausado');
+    clearInterval(timer);
+});
+
+zerar.addEventListener('click', function (event) {
+    clearInterval(timer);
+    relogio.innerHTML = '00:00:00';
+    relogio.classList.remove ('pausado');
+    segundos = 0;
+});
+
+}
+
+relogio();
