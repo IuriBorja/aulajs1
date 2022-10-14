@@ -147,7 +147,7 @@ function somaMais (somador) {
 const result = somaMais(5);
 
 
-console.log(result(10));
+console.log(result(10)); //RESULTADO 15
 
 
 //------------------------------------------
@@ -162,7 +162,7 @@ function nomeEmbutido(nome) {
 const meuNome = nomeEmbutido('Iuri');
 
 
-console.log(meuNome('Borja'));
+console.log(meuNome('Borja')); // RESULTADO 'Iuri Borja'
 
 
 //-----------------------------------------
@@ -181,7 +181,7 @@ const divPor5 = division(5);
 const divPor7 = division(7);
 
 
-console.log(divPor2(80), divPor5(50), divPor7(77));
+console.log(divPor2(80), divPor5(50), divPor7(77)); // RESULTADO 40, 10 ,11
 
 
 
@@ -189,13 +189,11 @@ console.log(divPor2(80), divPor5(50), divPor7(77));
 
 function bonecos1 (a) {
     return function (b){
-        return function (c = 5) {
-            return a + b + c;
-        }
-    }
+        return a + b;
 }
-
+}
 
 const recebe = bonecos1(5);
 
-console.log(recebe(5));
+console.log(recebe(10)); // RESULTADO 15
+
