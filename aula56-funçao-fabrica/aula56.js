@@ -26,7 +26,7 @@ function criaPessoa(nome, sobrenome, a, p) {
         altura: a,
         peso: p,
 
-        //Getter
+        //Getter -> transforma uma função em um atributo para apenas so obter um valor
        get imc() {
             const indice = this.peso / (this.altura ** 2);
             return indice.toFixed(2);
