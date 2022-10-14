@@ -108,7 +108,7 @@ console.log(quadriplica(5));
 
 
 
-console.log('##################')
+console.log('##################');
 // OUTRO EXEMPLO POREM CRIANDO APENAS UMA FUNÇÃO 
 // QUE FAÇA A CONTA E QUE EU SÓ PRECISE DAR
 // O MULTIPLICADOR
@@ -128,3 +128,74 @@ const quadriplica1 = criaMultiplicador(4);
 console.log(duplica1(5));
 console.log(triplica1(5));
 console.log(quadriplica1(5));
+
+
+
+//-------------------------------------------
+
+
+
+//FAZENDO VÁRIOS TESTES
+
+function somaMais (somador) {
+    return function(x) {
+        return x + somador;
+    }
+}
+
+
+const result = somaMais(5);
+
+
+console.log(result(10));
+
+
+//------------------------------------------
+
+
+function nomeEmbutido(nome) {
+    return function(embutido) {
+        return nome + ' ' + embutido;
+    }
+}
+
+const meuNome = nomeEmbutido('Iuri');
+
+
+console.log(meuNome('Borja'));
+
+
+//-----------------------------------------
+
+
+
+function division(divisor) {
+    return function(y) {
+        return y / divisor;
+    }
+}
+
+
+const divPor2 = division(2);
+const divPor5 = division(5);
+const divPor7 = division(7);
+
+
+console.log(divPor2(80), divPor5(50), divPor7(77));
+
+
+
+
+
+function bonecos1 (a) {
+    return function (b){
+        return function (c = 5) {
+            return a + b + c;
+        }
+    }
+}
+
+
+const recebe = bonecos1(5);
+
+console.log(recebe(5));
