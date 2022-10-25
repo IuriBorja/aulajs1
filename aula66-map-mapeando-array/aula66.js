@@ -1,3 +1,6 @@
+//.map -> mapeando array
+
+
 //Dobre os numeros
 
 // .map faz a mesma coisa de .filter porem modifica os objetos originais

@@ -1,3 +1,8 @@
+
+
+//filtrando array
+
+
 //Filter -> Sempre retorna um array, com a mesma quantidade de 
 //elementos ou menos.
 

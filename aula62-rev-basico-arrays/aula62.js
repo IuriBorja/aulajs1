@@ -1,3 +1,9 @@
+
+
+
+//revisão básica arrays
+
+
 const nomes = ['Iuri', 'Joana', 'Maria', 'Ricardo', 'Dedé'];
 
 

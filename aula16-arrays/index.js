@@ -1,3 +1,7 @@
+
+//arrays
+
+
 // as strings são indexçados por caracteres, exemplo:
 //          0123
 let nome = 'Iuri'

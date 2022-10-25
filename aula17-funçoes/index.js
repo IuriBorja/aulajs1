@@ -1,3 +1,9 @@
+
+
+
+//funções
+
+
 // funções executam ações, geralmente é pegar um valor com ela e gerar
 // outro de volta, tem funções que não retornam valores também
 

@@ -1,3 +1,8 @@
+
+
+//switch / case
+
+
 function getDaysText (day) {
     let diaSemanaTexto;
 
